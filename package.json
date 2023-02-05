@@ -1,6 +1,6 @@
 {
   "name": "@bryopsida/key-store",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A extendable TypeScript Node.JS library that provides a basic key store for data encryption keys",
   "main": "lib/index.js",
   "exports": "./lib/index.js",
