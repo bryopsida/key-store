@@ -105,7 +105,7 @@ export class FileKeyStore extends BaseKeyStore {
 
 You can then use the store like this (snippet from a test):
 ``` typescript
- const storeDir = tmpdir()
+const storeDir = tmpdir()
 const key = randomBytes(32)
 const salt = randomBytes(16)
 const context = randomBytes(32)
