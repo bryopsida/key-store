@@ -3,7 +3,15 @@
   "version": "0.1.0",
   "description": "A extendable TypeScript Node.JS library that provides a basic key store for data encryption keys",
   "main": "lib/index.js",
+  "exports": "./lib/app.js",
   "type": "module",
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "prepack": "npm run build",
     "build": "node_modules/typescript/bin/tsc --project ./",
