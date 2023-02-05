@@ -1,4 +1,5 @@
 # Key-Store
+
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=bryopsida_key-store&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=bryopsida_key-store) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=bryopsida_key-store&metric=coverage)](https://sonarcloud.io/summary/new_code?id=bryopsida_key-store) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=bryopsida_key-store&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=bryopsida_key-store) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=bryopsida_key-store&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=bryopsida_key-store) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=bryopsida_key-store&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=bryopsida_key-store) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=bryopsida_key-store&metric=bugs)](https://sonarcloud.io/summary/new_code?id=bryopsida_key-store)
 
 ## What is this?
@@ -10,8 +11,7 @@ What problem does this solve? This was intiailly created as part of a data mungi
 
 To create your own store extend from the BaseKeyStore and implement the required key slot functions. For example:
 
-
-``` typescript
+```typescript
 import { writeFile, mkdir, access, readFile, unlink, rm } from 'fs/promises'
 import { resolveHome } from './resolve.js'
 import {
@@ -104,7 +104,8 @@ export class FileKeyStore extends BaseKeyStore {
 ```
 
 You can then use the store like this (snippet from a test):
-``` typescript
+
+```typescript
 const storeDir = tmpdir()
 const key = randomBytes(32)
 const salt = randomBytes(16)
@@ -130,5 +131,4 @@ const fetchedDek = await keystore.fetchSealedDataEncKey(id)
 
 // should be the same
 expect(fetchedDek).toEqual(dek)
-
 ```
