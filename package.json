@@ -1,0 +1,52 @@
+{
+  "name": "key-store",
+  "version": "0.1.0",
+  "description": "A extendable TypeScript Node.JS library that provides a basic key store for data encryption keys",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "node_modules/typescript/bin/tsc --project ./",
+    "build:docs": "typedoc src/app.ts",
+    "test": "NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest --coverage --testPathPattern='test/.*\\.spec\\.ts'",
+    "lint": "eslint --ext .ts src/ test/ && prettier --check .",
+    "lint:fix": "eslint --ext .ts src/ test/ --fix && prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryopsida/key-store.git"
+  },
+  "keywords": [
+    "crypto",
+    "typescript",
+    "keystore",
+    "data-encryption-keys",
+    "node.js",
+    "minimal-dependencies"
+  ],
+  "author": "",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/bryopsida/key-store/issues"
+  },
+  "homepage": "https://github.com/bryopsida/key-store#readme",
+  "devDependencies": {
+    "@jest/globals": "29.4.1",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-github": "^4.6.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "jest": "^29.0.0",
+    "prettier": "2.8.3",
+    "standard": "^17.0.0",
+    "ts-jest": "29.x",
+    "ts-node": "^10.7.0",
+    "typedoc": "^0.23.23",
+    "typescript": "^4.6.2"
+  }
+}
