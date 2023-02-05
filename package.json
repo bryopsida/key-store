@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "node_modules/typescript/bin/tsc --project ./",
-    "build:docs": "typedoc src/app.ts",
+    "build:docs": "typedoc src/baseKeyStore.ts src/fileKeyStore.ts src/dataEncryption.ts",
     "test": "NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest --coverage --testPathPattern='test/.*\\.spec\\.ts'",
     "lint": "eslint --ext .ts src/ test/ && prettier --check .",
     "lint:fix": "eslint --ext .ts src/ test/ --fix && prettier --write ."
