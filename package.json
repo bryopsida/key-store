@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "description": "A extendable TypeScript Node.JS library that provides a basic key store for data encryption keys",
   "main": "lib/index.js",
-  "exports": "./lib/app.js",
+  "exports": "./lib/index.js",
   "type": "module",
   "engines": {
     "npm": ">=8.0.0",
