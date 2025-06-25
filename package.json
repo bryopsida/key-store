@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/bryopsida/key-store#readme",
   "devDependencies": {
-    "@jest/globals": "30.0.2",
+    "@jest/globals": "30.0.3",
     "@types/jest": "^29.0.0",
     "@types/node": "^24.0.0",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
